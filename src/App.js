@@ -26,8 +26,9 @@ function App() {
 
   //delete task
   const deleteTask = (id) => {
-    let newTask = toDo.filter(task => task.id !== id)
-    setToDo(newTask);
+    const newTasks = toDo.filter(task => task.id !== id)
+      .map((task, index) => ({ ...task, id: index + 1 }));
+    setToDo(newTasks);
   }
 
   //mark done task
