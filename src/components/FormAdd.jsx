@@ -17,7 +17,6 @@ const FormAdd = ({ newTask, setNewTask, addTask }) => {
             >Add Task</button>
           </div>
         </div>
-        <br/>
       </>
     )
   }

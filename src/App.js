@@ -42,7 +42,6 @@ function App() {
       setToDo(newTasks);
   }
 
-
   return (
     <div className="container App">
     <br /><br />
